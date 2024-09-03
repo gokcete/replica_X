@@ -1,0 +1,107 @@
+// @use "../../node_modules/bootstrap/scss/bootstrap.scss";
+$primary: #1D9BF0 !default;
+$light: #f7f9f9 !default;
+$h5-font-size: 0.8rem !default;
+$h6-font-size: 0.9rem !default;
+$box-shadow: -0.2rem -0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+/* blue hover color: #ebf5fe
+darker grey hover color: #e7e7e8
+lighter grey hover color: #f7f7f7
+*/
+
+
+.profile-picture {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.verified-badge {
+    width: 1rem;
+}
+
+.header-nav i, header i {
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    
+}
+
+a:hover {
+    background-color: #e7e7e8;
+}
+
+.who-to-follow, .trends {
+
+    li:hover {
+        background-color: #e7e7e8;
+        cursor: pointer;
+    
+    }
+} 
+
+
+
+div.post:hover {
+    background-color: #f7f7f7;
+}
+
+
+.social-media i {
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+
+.social-media a, .fa-ellipsis {
+    &:hover {
+        background-color: #ebf5fe;
+        color: $primary;
+    }
+}
+
+.account-owner:hover {
+    text-decoration: underline;
+}
+
+div.footer a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.no-outline:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+}
+
+
+.search {
+    i {
+        margin-block-start: 0.75rem;
+        margin-inline-start: 1rem;
+    }
+
+    input:focus {
+        box-shadow: inset 0 0 1px 1px #1D9BF0;
+    }
+}
+
+.aside::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+.messagebox {
+    width: 27%;
+}

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="container-fluid">
+<div class="" style="padding-left: 25%;">
+
+    
+<!-- side navbar -->
+
+    <header class="px-4 ps-5 fs-4 header fixed-top border-top border-end h-100 d-flex flex-column justify-content-around align-items-center align-items-xl-start" style="width: 25%;">
+        <div class="d-flex flex-column align-items-center align-items-xl-start" >
+            <a href="#" class="rounded-circle text-center" style="width: 3rem; height: 3rem;"><img src="../images/X_logo_2023_original.svg" alt="x-logo" style="width: 1.5rem;"></a>
+            
+            <nav class="">
+                <ul class="list-unstyled fw-normal small header-nav">
+                        
+                        <li class=""><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-solid fa-house"></i> <span class="d-none d-xl-inline px-3"><strong class="">Home</strong></span></a></li>    
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-solid fa-magnifying-glass"></i> <span class="d-none d-xl-inline px-3">Explore</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-solid fa-bell"></i> <span class="d-none d-xl-inline px-3">Notifications</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-regular fa-envelope"></i> <span class="d-none d-xl-inline px-3">Messages</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-solid fa-list"></i> <span class="d-none d-xl-inline px-3">Lists</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-regular fa-bookmark"></i> <span class="d-none d-xl-inline px-3">Bookmarks</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-solid fa-user-group"></i> <span class="d-none d-xl-inline px-3">Communities</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-brands fa-x-twitter"></i> <span class="d-none d-xl-inline px-3">Premium</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-regular fa-user"></i> <span class="d-none d-xl-inline px-3">Profile</span></a></li>
+                        <li><a href="#" class="d-inline-block rounded-end-pill rounded-start-pill p-2"><i class="fa-solid fa-ellipsis"></i> <span class="d-none d-xl-inline px-3">More</span></a></li>
+                        <br>
+                        <li>
+                            <button type="button" class="btn btn-primary rounded-end-pill rounded-start-pill px-5 py-3 d-none d-xl-inline w-100 text-white fw-bold">Post</button>
+                            <button type="button" class="btn btn-primary rounded-circle d-inline d-xl-none"><i class="fa-solid fa-feather-pointed"></i></button>
+                        </li>
+                </ul>
+                
+            </nav>
+        </div>
+        <div class="pe-3 w-100">
+                <a href="#" class="d-flex align-items-center justify-content-xl-between justify-content-center rounded-end-pill rounded-start-pill py-1 px-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="../images/pp.jpg" alt="" class="profile-picture">
+                        <div class="d-none d-xl-inline">
+                            <p class="fs-6 fw-bold lh-1 p-0 m-0">Gökce Özak</p>
+                            <p class="fs-6 fw-normal lh-1 p-0 m-0 text-secondary">@gokcete</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis d-none d-xl-inline"></i>
+                </a>
+        </div>
+        
+    </header>    
+
+<!-- main section -->
+
+    <main class="row">
+
+<!-- main flow -->
+        <div class="col-lg-7 border-end col-md-10 col-12">
+
+        
+    
+<!-- enter-post form -->
+            <div class="text-center border-bottom py-3 mb-3">
+                <div class="container m-0 border-bottom">
+                    <ul class="nav nav-underline row gap-0">
+                        <li class="nav-item col-5">
+                        <a class="nav-link" aria-current="page" href="#">For you</a>
+                        </li>
+                        <li class="nav-item col-5">
+                        <a class="nav-link" href="#">Following</a>
+                        </li>
+                        <li class="nav-item col-2">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i></a>
+                        </li>
+                    
+                    </ul>
+                </div>                
+
+
+
+                <div class="input-group flex-nowrap mt-2 mb-3 py-2 bg-white">
+                    <span class="input-group-text bg-white border-0" id="addon-wrapping"><img src="../images/pp.jpg" alt="" class="profile-picture"></span>
+                    <input type="search" class="no-outline form-control border-0 bg-white" placeholder="What is happening?!" aria-label="Search">
+                </div>
+                            
+                <div class="d-flex justify-content-between px-3 ms-5 social-media">
+                    <ul class="list-unstyled d-flex gap-2">
+                        <li><a href="#" class="text-primary p-2 rounded-circle"><i class="fa-regular fa-image"></i></a></li>
+                        <li><a href="#" class="text-primary p-2 rounded-circle"><i class="fa-solid fa-video"></i></a></li>
+                        <li><a href="#" class="text-primary p-2 rounded-circle"><i class="fa-solid fa-list-check"></i></a></li>
+                        <li><a href="#" class="text-primary p-2 rounded-circle"><i class="fa-regular fa-face-smile"></i></a></li>
+                        <li><a href="#" class="text-primary p-2 rounded-circle"><i class="fa-regular fa-calendar"></i></a></li>
+                        <li><a href="#" class="text-primary p-2 rounded-circle"><i class="fa-solid fa-location-dot"></i></a></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary rounded-end-pill rounded-start-pill px-3 text-white fw-bold">Post</button>
+                </div>
+            </div>
+                
+
+<!-- other posts -->   
+                <div class="container-fluid mx-0">
+
+                    <a href="#" class="">
+                        <div class="post row border-bottom">
+                            
+                            <div class="col-auto p-0">
+                                <img src="../images/pp4.png" alt="" class="profile-picture">
+                            </div>
+                            <div class="post-content col pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="">
+                                        <span class="fw-bold account-owner">GitHub</span> 
+                                        <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                        <span class="text-secondary">@github</span>
+                                        <span class="text-secondary">·</span>
+                                        <span class="text-secondary">12h</span>
+                                    </p>
+                                    <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                                </div>
+                                <p class="p-0 m-0">Imagine: your ideas are flowing, time and space fade away, the path ahead of you is clear, you’re moving at the speed of thought, and every click you make is gold. ✨</p> 
+                                <p>Learn about flow state and how to reach it next time you code. 👇</p>
+                                <img src="../images/post-image-2.jpeg" alt="" class="w-100 border mb-2">
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p class=""><i class="fa-regular fa-comment"></i> 8</p>
+                                    <p class=""><i class="fa-solid fa-retweet"></i> 17</p>
+                                    <p class=""><i class="fa-regular fa-heart"></i> 102</p>
+                                    <p class=""><i class="fa-solid fa-chart-simple"></i> 33K</p>
+                                    <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="post row border-bottom">
+                            
+                                <div class="col-auto p-0"><img src="../images/pp4.png" alt="" class="profile-picture"></div>
+                                <div class="post-content col pt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="">
+                                            <span class="fw-bold account-owner">GitHub</span> 
+                                            <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                            <span class="text-secondary">@github</span>
+                                            <span class="text-secondary">·</span>
+                                            <span class="text-secondary">12h</span>
+                                        </p>
+                                        <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                                    </div>
+                                    <p class="">Imagine: your ideas are flowing, time and space fade away, the path ahead of you is clear, you’re moving at the speed of thought, and every click you make is gold. ✨
+                                    </p> 
+                                    <p>Learn about flow state and how to reach it next time you code. 👇</p>
+                                    <img src="../images/post-image-3.jpeg" alt="" class="w-100 border mb-2">
+                                    <div class="d-flex justify-content-between text-secondary">
+                                        <p class=""><i class="fa-regular fa-comment"></i> 8</p>
+                                        <p class=""><i class="fa-solid fa-retweet"></i> 17</p>
+                                        <p class=""><i class="fa-regular fa-heart"></i> 102</p>
+                                        <p class=""><i class="fa-solid fa-chart-simple"></i> 33K</p>
+                                        <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="post row border-bottom">
+                            
+                                <div class="col-auto p-0"><img src="../images/pp4.png" alt="" class="profile-picture"></div>
+                                <div class="post-content col pt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="">
+                                            <span class="fw-bold account-owner">GitHub</span> 
+                                            <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                            <span class="text-secondary">@github</span>
+                                            <span class="text-secondary">·</span>
+                                            <span class="text-secondary">12h</span>
+                                        </p>
+                                        <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                                    </div>
+                                    <p class="">Imagine: your ideas are flowing, time and space fade away, the path ahead of you is clear, you’re moving at the speed of thought, and every click you make is gold. ✨
+                                    </p> 
+                                    <p>Learn about flow state and how to reach it next time you code. 👇</p>
+                                    <img src="../images/post-image-4.jpeg" alt="" class="w-100 border mb-2">
+                                    <div class="d-flex justify-content-between text-secondary">
+                                        <p class=""><i class="fa-regular fa-comment"></i> 8</p>
+                                        <p class=""><i class="fa-solid fa-retweet"></i> 17</p>
+                                        <p class=""><i class="fa-regular fa-heart"></i> 102</p>
+                                        <p class=""><i class="fa-solid fa-chart-simple"></i> 33K</p>
+                                        <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="post row border-bottom">
+                            
+                                <div class="col-auto p-0"><img src="../images/pp4.png" alt="" class="profile-picture"></div>
+                                <div class="post-content col pt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="">
+                                            <span class="fw-bold account-owner">GitHub</span> 
+                                            <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                            <span class="text-secondary">@github</span>
+                                            <span class="text-secondary">·</span>
+                                            <span class="text-secondary">12h</span>
+                                        </p>
+                                        <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                                    </div>
+                                    <p class="">Imagine: your ideas are flowing, time and space fade away, the path ahead of you is clear, you’re moving at the speed of thought, and every click you make is gold. ✨
+                                    </p> 
+                                    <p>Learn about flow state and how to reach it next time you code. 👇</p>
+                                    <img src="../images/post-image-2.jpeg" alt="" class="w-100 border mb-2">
+                                    <div class="d-flex justify-content-between text-secondary">
+                                        <p class=""><i class="fa-regular fa-comment"></i> 8</p>
+                                        <p class=""><i class="fa-solid fa-retweet"></i> 17</p>
+                                        <p class=""><i class="fa-regular fa-heart"></i> 102</p>
+                                        <p class=""><i class="fa-solid fa-chart-simple"></i> 33K</p>
+                                        <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="post row border-bottom">
+                            <div class="col-auto p-0"><img src="../images/pp6.jpg" alt="" class="profile-picture"></div>
+                            <div class="post-content col pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="">
+                                        <span class="fw-bold account-owner">JavaScript</span> 
+                                        <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                        <span class="text-secondary">@JavaScript</span>
+                                        <span class="text-secondary">·</span>
+                                        <span class="text-secondary">April 29, 2022</span>
+                                    </p>
+                                    <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                                </div>
+                                <p class="">Just curious, are you using => functions exclusively or still sticking to traditional function syntax?</p> 
+                                <p>No judgement!</p>
+                                <div class="d-flex justify-content-between text-secondary">
+                                    <p class=""><i class="fa-regular fa-comment"></i> 721</p>
+                                    <p class=""><i class="fa-solid fa-retweet"></i> 355</p>
+                                    <p class=""><i class="fa-regular fa-heart"></i> 2.9K</p>
+                                    <p class=""><i class="fa-solid fa-chart-simple"></i> 1K</p>
+                                    <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                
+                    <div class="post row border-bottom">
+                        <div class="col-auto p-0"><img src="../images/Twitter X Icon.svg" alt="" class="profile-picture"></div>
+                        <div class="post-content col pt-2">
+                            <div class="d-flex justify-content-between">
+                                <p class="">
+                                    <span class="fw-bold account-owner">Elon Musk</span> 
+                                    <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                    <span class="text-secondary">@elonmusk</span>
+                                    <span class="text-secondary">·</span>
+                                    <span class="text-secondary">18h</span>
+                                </p>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </div>
+                            <p class="">An 𝕏 spam/scam bot accidentally flagged many legitimate accounts today. This is being fixed.</p>
+                            <div class="d-flex justify-content-between text-secondary">
+                                <p class=""><i class="fa-regular fa-comment"></i> 13K</p>
+                                <p class=""><i class="fa-solid fa-retweet"></i> 18K</p>
+                                <p class=""><i class="fa-regular fa-heart"></i> 124K</p>
+                                <p class=""><i class="fa-solid fa-chart-simple"></i> 34M</p>
+                                <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post row border-bottom">
+                        <div class="col-auto p-0"><img src="../images/pp1.jpg" alt="" class="profile-picture"></div>
+                        <div class="post-content col pt-2">
+                            <div class="d-flex justify-content-between">
+                                <p class="">
+                                    <span class="fw-bold account-owner">John Doe</span> 
+                                    
+                                    <span class="text-secondary">@johndoe</span>
+                                    <span class="text-secondary">·</span>
+                                    <span class="text-secondary">1h</span>
+                                </p>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </div>
+                            <p class="">Das Deutschlandticket soll 2024 weiterhin 49 Euro kosten.
+                                Die Zusatzkosten für alternative Verkehrsmittel an den 300 Streiktagen im Jahr machen es ja eh teuer genug. <span class="text-primary">#Bahnstreik</span></p>
+                            <div class="d-flex justify-content-between text-secondary">
+                                <p class=""><i class="fa-regular fa-comment"></i> 1K</p>
+                                <p class=""><i class="fa-solid fa-retweet"></i> 3K</p>
+                                <p class=""><i class="fa-regular fa-heart"></i> 12K</p>
+                                <p class=""><i class="fa-solid fa-chart-simple"></i> 34k</p>
+                                <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post row border-bottom">
+                        <div class="col-auto p-0"><img src="../images/pp-ang.jpg" alt="" class="profile-picture"></div>
+                        <div class="post-content col pt-2">
+                            <div class="d-flex justify-content-between">
+                                <p class="">
+                                    <span class="fw-bold account-owner">Angular</span> 
+                                    <img src="../images/twitter-verified-badge.svg" alt="" class="verified-badge">
+                                    <span class="text-secondary">@angular</span>
+                                    <span class="text-secondary">·</span>
+                                    <span class="text-secondary">Nov 8, 2023</span>
+                                </p>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </div>
+                            <p class="">Angular v17. The framework you love, with a fresh new look, and:<br>
+                                🦥 deferrable views <br>
+                                ⚡️ up to 90% faster, intuitive built-in control flow <br>
+                                🏎️ up to 87% faster build times with hybrid rendering <br>
+                                🏗️ Vite + esbuild builds <br>
+                                + more!</p>
+                            <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/mVjYG9TSN88?si=lloYQvqCmldcBO62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="d-flex justify-content-between text-secondary">
+                                <p class=""><i class="fa-regular fa-comment"></i> 1K</p>
+                                <p class=""><i class="fa-solid fa-retweet"></i> 3K</p>
+                                <p class=""><i class="fa-regular fa-heart"></i> 12K</p>
+                                <p class=""><i class="fa-solid fa-chart-simple"></i> 34k</p>
+                                <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="post row border-bottom">
+                        <div class="col-auto p-0"><img src="../images/pp4.jpg" alt="" class="profile-picture"></div>
+                        <div class="post-content col pt-2">
+                            <div class="d-flex justify-content-between">
+                                <p class="">
+                                    <span class="fw-bold account-owner">Jane Doe</span> 
+                                    
+                                    <span class="text-secondary">@janedoe</span>
+                                    <span class="text-secondary">·</span>
+                                    <span class="text-secondary">2d</span>
+                                </p>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </div>
+                            <p class="">Das ist jetzt das zweite mal, dass unser Ausflug wegen einem <span class="text-primary">#Bahnstreik</span> verschoben wird. 
+                                Trotzdem hat die <span class="text-primary">#GDL</span> meine vollste Unterstützung! Ein Schulausflug ist weniger wichtig als der Arbeitskampf!</p>
+                            <img src="../images/post-image-1.jpeg" alt="" class="w-100 border mb-2">
+                            <div class="d-flex justify-content-between text-secondary">
+                                <p class=""><i class="fa-regular fa-comment"></i> 1K</p>
+                                <p class=""><i class="fa-solid fa-retweet"></i> 3K</p>
+                                <p class=""><i class="fa-regular fa-heart"></i> 12K</p>
+                                <p class=""><i class="fa-solid fa-chart-simple"></i> 34k</p>
+                                <p class=""><i class="fa-regular fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+
+
+
+<!-- aside section -->    
+
+
+        <div class="aside col-5 ps-3 pe-5 d-none d-lg-inline sticky-top overflow-y-scroll" style="height: 100vh;">
+
+
+<!-- search bar -->
+            
+            <div class="search position-relative flex-nowrap mt-2 mb-3">
+                <i class="position-absolute fa-solid fa-magnifying-glass"></i>
+                <input type="search" class="no-outline form-control border-0 bg-light p-2 ps-5 rounded-end-pill rounded-start-pill" placeholder="Search" aria-label="Search">
+            </div>
+            
+    
+<!--subscription box -->
+
+
+            <div class="card border-0 bg-light rounded-4 mb-3">
+                <div class="card-body">
+                <h5 class="card-title fw-bold h4">Subscribe to Premium</h5>
+                <p class="card-text">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <a href="#" class="btn btn-dark rounded-end-pill rounded-start-pill">Subscribe</a>
+                </div>
+            </div>
+
+<!-- who to follow section -->
+
+            <div class="card border-0 bg-light rounded-4 mb-3 who-to-follow">
+                <div class="card-body  px-0">
+
+                    <h5 class="card-title fw-bold h4 px-3">Who to follow</h5>
+                    <ul class="list-group list-group-flush list-unstyled">
+                        <li class="border-0 px-3 py-2">
+                            
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="../images/pp4.png" alt="" class="profile-picture align-self-center">
+                                        <div>
+                                            <p class="fs-6 fw-bold lh-1 p-0 m-0">GitHub</p>
+                                            <p class="fs-6 fw-normal lh-1 p-0 m-0 text-secondary">@github</p>
+    
+                                        </div>
+                                        
+                                    </div>
+                                    <a href="#" class="btn btn-dark rounded-end-pill rounded-start-pill">Follow</a>
+                                </div>
+                            
+                        </li>
+
+                        <li class="border-0 px-3 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-1">
+
+                                    <img src="../images/pp3.jpg" alt="" class="profile-picture">
+                                    <div>
+                                        <p class="fs-6 fw-bold lh-1 p-0 m-0">Max Mustermann</p>
+                                        <p class="fs-6 fw-normal lh-1 p-0 m-0 text-secondary">@mustermann</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-dark rounded-end-pill rounded-start-pill">Follow</a>
+                            </div>
+                        </li>
+
+                        <li class="border-0 px-3 py-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-1">
+
+                                    <img src="../images/pp6.jpg" alt="" class="profile-picture">
+                                    <div>
+                                        <p class="fs-6 fw-bold lh-1 p-0 m-0">JavaScript</p>
+                                        <p class="fs-6 fw-normal lh-1 p-0 m-0 text-secondary">@JavaScript</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-dark rounded-end-pill rounded-start-pill">Follow</a>
+                            </div>
+                        </li>
+
+                        <li class="text-primary px-3 py-2">Show more</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            
+
+<!-- trends section -->
+
+            <div class="card border-0 bg-light rounded-4 mb-3 trends">
+                <div class="card-body px-0">
+
+                    <h5 class="card-title fw-bold h4 px-3">Germany trends</h5>
+                    <ul class="list-group list-group-flush list-unstyled">
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">1 · Politics · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">#Maischberger</p>
+                                    <p class="p-0 m-0">16.5K posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">2 · Politics · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">#Dexit</p>
+                                    <p class="p-0 m-0">12K posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">3 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">Edeka</p>
+                                    <p class="p-0 m-0">13.4K posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">4 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">#Bahnstreik</p>
+                                    <p class="p-0 m-0">2,086 posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">5 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">#Chrupalla</p>
+                                    <p class="p-0 m-0">7,756 posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">6 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">Anya</p>
+                                    <p class="p-0 m-0">15K posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">7 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">POWs</p>
+                                    <p class="p-0 m-0">3,738 posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">8 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">Leyla</p>
+                                    <p class="p-0 m-0">8,474 posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">9 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">Lokführer</p>
+                                    <p class="p-0 m-0">2,523 posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="border-0 px-3 py-2 d-flex justify-content-between">
+                                <div class="fs-5">
+                                    <p class="p-0 m-0">10 · Trending</p>
+                                    <p class="fw-bold fs-6 p-0 m-0">$FAR</p>
+                                    <p class="p-0 m-0">1,280 posts</p>
+                                    
+                                </div>
+                                <p class="text-secondary"><i class="fa-solid fa-ellipsis p-2 rounded-circle"></i></p>
+                            </li>
+                        </a>
+
+                        <li class="text-primary px-3 py-2">Show more</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+
+<!-- footer section -->
+
+
+            <div class="footer d-flex flex-wrap gap-2 h5 text-secondary fw-light mb-5">
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Cookie policy</a></p>
+                <p><a href="#">MStV Transparenzangaben</a></p>
+                <p><a href="#">Imprint</a></p>
+                <p><a href="#">Accessibility</a></p>
+                <p><a href="#">Ads Info</a></p>
+                <p><a href="#">More</a></p>
+                <p>&copy 2024 X Corp.</p>
+            </div>
+
+
+
+            <div class="alert bg-white alert-dismissible fade show position-fixed bottom-0 d-flex justify-content-between shadow p-3 bg-body-tertiary rounded m-0 messagebox" role="alert">
+                <strong>Messages</strong>
+                <div>
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <i class="fa-solid fa-angles-up px-2"></i>
+                </div>
+              </div>
+              
+
+        </div>
+
+<!-- invisible aside -->
+
+        <div class="aside col-md-2 ps-3 pe-5 d-none d-md-inline d-lg-none sticky-top overflow-y-scroll" style="height: 100vh;">
+
+    </main>
+</div>
+</body>
+</html>

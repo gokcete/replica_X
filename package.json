@@ -1,0 +1,28 @@
+{
+  "name": "project_gokce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run compile-scss & live-server",
+    "compile-scss": "sass --watch src/styles/main.scss src/styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FBW-23-E10/project_gokce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FBW-23-E10/project_gokce/issues"
+  },
+  "homepage": "https://github.com/FBW-23-E10/project_gokce#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.70.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
